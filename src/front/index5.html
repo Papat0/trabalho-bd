@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depósito</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <script src="../js/app2.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Agencia</a>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/src/front/index3.html">Criar Agencia</a></li>
+            <li><a href="http://127.0.0.1:5500/src/front/test.html">Listar Agencias</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Conta</a>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/src/front/index4.html">Listar Contas</a></li>
+            <li><a href="http://127.0.0.1:5500/src/front/index2.html">Criar Conta</a></li>
+            <li><a href="http://127.0.0.1:5500/src/front/index5.html">Depósito</a></li>
+            <li><a href="http://127.0.0.1:5500/src/front/index6.html">Saque</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="second-column">
+      <h2 class="title title-second">Depósito</h2>
+
+      <p class="description description-second">Preencha para realizar um depósito</p>
+      <form action="/" method="post" class="form">
+        <label class="label-input" for="">
+          <i class="fas fa-university icon-modify"></i>
+          <input id="num-conta" type="number" placeholder="Número da Conta">
+        </label>
+
+        <label class="label-input" for="">
+          <i class="fas fa-money icon-modify"></i>
+          <input id="value" type="number" step="0.01" name="quantity" min="0.01" placeholder="Valor">
+        </label>
+
+
+        <button class="btn btn-second" id='btn' type="button" onclick="depositar()">Depositar</button>
+      </form>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
